@@ -23,6 +23,15 @@
             background: red;
             color:white;
         }
+        .footer {
+             position: absolute;
+             bottom: 0;
+             width: 100%;
+             height: 60px;
+             background: #000000;
+             color: #FFFFFF;
+         }
+
     </style>
 </head>
 <body>
@@ -144,6 +153,6 @@
 
 
 </script>
-
+<?php include("footer.php"); ?>
 </body>
 </html>
