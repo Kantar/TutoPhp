@@ -33,6 +33,9 @@
          }
 
     </style>
+    <?php
+        include("codephp.php");
+    ?>
 </head>
 <body>
 <div class="jumbotron">
@@ -64,9 +67,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
     // *****************************PHP*******************
-    <?php
-    include("codephp.php");
-    ?>
+
     // *****************************SOCKET IO*******************
     var socket = io.connect('http://localhost:8080');
     socket.on('news', function (data) {
