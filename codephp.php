@@ -11,6 +11,7 @@ $link;
 
 if(!isset($_GET['title'])){
     $title = $_GET['title'];
+    var_dump($title);
     switch ($title){
         case Tuto1:
             $link = "./Tuto1/bonjour.php";
