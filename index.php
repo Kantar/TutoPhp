@@ -46,19 +46,14 @@
             <a class="btn btn-danger btn-sm" href="#" >Tache en erreur</a>
         </div>
         <?php include("menu.php"); ?>
-        <!--
-        <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-            <a class="navbar-brand" href="/Tuto1/utilisateur/">Tuto1</a>
-            <a class="navbar-brand" href="/accueil/creerTache/">CREER TACHE</a>
-            <a class="navbar-brand" href="/accueil/importer/">IMPORTER</a>
-        </nav>
-        -->
+
     </div>
     <div class=container>
+        <a><?php echo $title; ?></a>
         <ul class="list-group">
-            <a>Job:</a>
+
             <li id="<%= 'tache'+tache.idTache %>" class="list-group-item">
-                <?php include("./test1/test1.php"); ?>
+                <?php include($link); ?>
             </li>
         </ul>
     </div>
@@ -68,6 +63,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script>
+    // *****************************PHP*******************
+    <?php
+    include("codephp.php");
+    ?>
     // *****************************SOCKET IO*******************
     var socket = io.connect('http://localhost:8080');
     socket.on('news', function (data) {

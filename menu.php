@@ -6,7 +6,7 @@
  */
   -->
 <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-            <a class="navbar-brand" href="/Tuto1/utilisateur/">Tuto1</a>
+            <a class="navbar-brand" href="index.php?title='Tuto1'">Tuto1</a>
             <a class="navbar-brand" href="/accueil/creerTache/">CREER TACHE</a>
             <a class="navbar-brand" href="/accueil/importer/">IMPORTER</a>
 </nav>
