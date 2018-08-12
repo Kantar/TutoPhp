@@ -23,9 +23,6 @@
             background: red;
             color:white;
         }
-
-
-
     </style>
 </head>
 <body>
@@ -39,11 +36,14 @@
             <a class="btn btn-info btn-sm" href="#" >Tache en cours</a>
             <a class="btn btn-danger btn-sm" href="#" >Tache en erreur</a>
         </div>
+        <?php include("menu.php"); ?>
+        <!--
         <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-            <a class="navbar-brand" href="/accueil/utilisateur/">ACCUEIL</a>
+            <a class="navbar-brand" href="/Tuto1/utilisateur/">Tuto1</a>
             <a class="navbar-brand" href="/accueil/creerTache/">CREER TACHE</a>
             <a class="navbar-brand" href="/accueil/importer/">IMPORTER</a>
         </nav>
+        -->
     </div>
     <div class=container>
         <ul class="list-group">
