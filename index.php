@@ -49,7 +49,6 @@
             <a class="btn btn-danger btn-sm" href="#" >Tache en erreur</a>
         </div>
         <?php include("menu.php"); ?>
-
     </div>
     <div class=container>
         <a><?php echo $title; ?></a>
