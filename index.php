@@ -40,20 +40,13 @@
     <h1>Bienvenue sur l'accueil des tests php et bootstrap</h1>
     <h3>Voici la liste des tâches:</h3>
     <div class="container">
-        <div class="btn-group" style="text-align: center">
-            <a class="btn btn-primary btn-sm" href="#" >Tache en attente</a>
-            <a class="btn btn-success btn-sm" href="#" >Tache terminée</a>
-            <a class="btn btn-info btn-sm" href="#" >Tache en cours</a>
-            <a class="btn btn-danger btn-sm" href="#" >Tache en erreur</a>
-        </div>
         <?php include("menu.php"); ?>
     </div>
     <div class=container>
-        <a><?php echo $title; ?></a>
+        <a></a>
         <ul class="list-group">
 
             <li id="<%= 'tache'+tache.idTache %>" class="list-group-item">
-                <?php include($link); ?>
             </li>
         </ul>
     </div>
@@ -61,28 +54,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script>
-    <?php
-    //include("./codephp.php");
-    $title;
-    $link;
-
-    if(!isset($_GET['title'])){
-        $title = $_GET['title'];
-        var_dump($title);
-        switch ($title){
-            case Tuto1:
-                $link = '"./Tuto1/bonjour.php"';
-                break;
-            default:
-                $link = "codephp : title non prévus";
-                break;
-        }
-    }else{
-        $title ='Accueil';
-    }
-    ?>
-</script>
 <script>
 
     // ****************************JQuery*******************
