@@ -14,7 +14,7 @@
     </head>
     <body>
     <?php
-    include("./menu.php");
+    include("../menu.php");
     ?>
     <h2>Page de test</h2>
     <p>
