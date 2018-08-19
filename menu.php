@@ -8,5 +8,5 @@
 <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
             <a class="navbar-brand" href="index.php">Accueil</a>
             <a class="navbar-brand" href="/Tuto1/bonjour.php">Tuto 1</a>
-            <a class="navbar-brand" href="/accueil/importer/">IMPORTER</a>
+            <a class="navbar-brand" href="/Tuto2/index.php">Tuto 2</a>
 </nav>

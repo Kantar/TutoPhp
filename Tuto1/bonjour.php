@@ -19,7 +19,7 @@
     <h2>Page de test</h2>
     <p>
         Cette page contient du code HTML avec des balises PHP.<br />
-        <?php /* Insérer du code PHP ici */ ?>
+        <?php echo "Ceci est du texte php";?>
         Voici quelques petits tests :
     </p>
     <ul>
@@ -29,9 +29,9 @@
     </ul>
     <?php
 
-    /* Encore du PHP
+    $age_du_visiteur = 17;
+    echo 'le visiteur à '.$age_du_visiteur.' ans';
 
-    Toujours du PHP */
 
     ?>
     </body>
