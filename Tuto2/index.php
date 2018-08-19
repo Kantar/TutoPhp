@@ -7,8 +7,8 @@
  */
 require 'Personnage.php';
 
-$perso1 = new Personnage;
-$perso2 = new Personnage();
+$perso1 = new Personnage(10,15,0);
+$perso2 = new Personnage(100,15,10);
 $perso1->setForce(10);
 $perso1->setExperience(2);
 
