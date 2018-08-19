@@ -9,16 +9,16 @@
 require '../Tools/tools.php';
 spl_autoload_register('chargerClasse');
 
-$perso1 = new Personnage(10,15,0);
-$perso2 = new Personnage(100,15,10);
+$perso1 = new Personnage(Personnage::FORCE_MOYENNE,15,0);
+$perso2 = new Personnage(Personnage::FORCE_PETITE,15,10);
 $perso1->setForce(10);
 $perso1->setExperience(2);
 
 $perso2->setForce(90);
 $perso2->setExperience(58);
 
-$perso1->parler();
-$perso2->parler();
+$perso1::parler();
+$perso2::parler();
 $perso1->afficherExperience();
 $perso2->afficherExperience();
 $perso1->frapper($perso2);
