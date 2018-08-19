@@ -5,7 +5,7 @@
  * Date: 19/08/2018
  * Time: 15:10
  */
-require 'Personnage.php';
+require '../Models/Personnage.php';
 
 $perso1 = new Personnage(10,15,0);
 $perso2 = new Personnage(100,15,10);
