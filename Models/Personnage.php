@@ -8,6 +8,8 @@
 
 class Personnage
 {
+    private $_id;
+    private $_nom;
     private $_force;
     private  $_localisation;
     private $_experience;
@@ -16,6 +18,8 @@ class Personnage
     const FORCE_PETITE = 20;
     const FORCE_MOYENNE = 50;
     const FORCE_GRANDE = 80;
+
+    private static $_compteur = 0;
 
     /**
      * Personnage constructor.
@@ -26,10 +30,28 @@ class Personnage
      */
     public function __construct($_force, $_localisation, $_degats)
     {
+        self::$_compteur++;
         $this->setForce($_force) ;
         $this->setLocalisation($_localisation) ;
         $this->_experience = 1 ;
         $this->setDegats($_degats);
+    }
+    public function hydrate(array $donnees)
+    {
+        foreach ($donnees as $key => $value)
+        {
+            // On récupère le nom du setter correspondant à l'attribut.
+            $method = 'set'.ucfirst($key);
+            // Si le setter correspondant existe.
+            if (method_exists($this, $method))
+            {
+                // On appelle le setter.
+                $this->$method($value);
+            }
+        }
+    }
+    public static function getCompteur(){
+        return self::$_compteur;
     }
 
     public function deplacer(){

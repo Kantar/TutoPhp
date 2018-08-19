@@ -29,6 +29,20 @@ $perso2->gagnerExperience();
 echo 'Le personnage 1 a ', $perso1->getForce(), ' de force, contrairement au personnage 2 qui a ', $perso2->getForce(), 'de force.<br />';
 echo 'Le personnage 1 a ', $perso1->getExperience(), ' d\'expérience, contrairement au personnage 2 qui a ', $perso2->getExperience(), ' d\'expérience.<br />';
 echo 'Le personnage 1 a ', $perso1->getDegats(), ' de dégâts, contrairement au personnage 2 qui a ', $perso2->getDegats(), ' de dégâts.<br />';
+echo Personnage::getCompteur();
 
+/****************DAO*********************/
+$perso = new Personnage([
+    'nom' => 'Victor',
+    'forcePerso' => 5,
+    'degats' => 0,
+    'niveau' => 1,
+    'experience' => 0
+]);
+
+$db = new PDO('mysql:host=localhost;dbname=tests', 'root', '');
+$manager = new ManagePersonnage($db);
+
+$manager->add($perso);
 
 
